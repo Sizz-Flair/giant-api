@@ -28,16 +28,17 @@ public class ApiAutoConfig {
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        marshaller.setClassesToBeBound(
-                LogenNumberRequest.class,
-                LogenNumberResponse.class,
-                LogenZipCodeRequest.class,
-                LogenZipCodeResponse.class,
-                LogenTraceRequest.class,
-                LogenTraceResponse.class,
-                LogenOrderRequest.class,
-                LogenOrderResponse.class
-        );
+//        marshaller.setClassesToBeBound(
+//                LogenNumberRequest.class,
+//                LogenNumberResponse.class,
+//                LogenZipCodeRequest.class,
+//                LogenZipCodeResponse.class,
+//                LogenTraceRequest.class,
+//                LogenTraceResponse.class,
+//                LogenOrderRequest.class,
+//                LogenOrderResponse.class
+//        );
+        marshaller.setPackagesToScan("org.giant.api.domain");
 
         return marshaller;
     }

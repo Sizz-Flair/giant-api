@@ -1,4 +1,4 @@
-package org.giant.api.domain.delivery.logen;
+package org.giant.api.domain.delivery;
 
 import lombok.NoArgsConstructor;
 import org.giant.api.domain.delivery.logen.number.model.LogenNumberRequest;
