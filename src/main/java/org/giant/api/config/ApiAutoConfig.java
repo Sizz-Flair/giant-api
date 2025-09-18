@@ -1,5 +1,7 @@
 package org.giant.api.config;
 
+import org.giant.api.domain.delivery.cj.zip.model.request.GetAddressInformationByValue;
+import org.giant.api.domain.delivery.cj.zip.model.response.GetAddressInformationByValueResponse;
 import org.giant.api.domain.delivery.logen.number.model.LogenNumberRequest;
 import org.giant.api.domain.delivery.logen.number.model.LogenNumberResponse;
 import org.giant.api.domain.delivery.logen.order.model.LogenOrderRequest;
@@ -28,17 +30,19 @@ public class ApiAutoConfig {
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-//        marshaller.setClassesToBeBound(
-//                LogenNumberRequest.class,
-//                LogenNumberResponse.class,
-//                LogenZipCodeRequest.class,
-//                LogenZipCodeResponse.class,
-//                LogenTraceRequest.class,
-//                LogenTraceResponse.class,
-//                LogenOrderRequest.class,
-//                LogenOrderResponse.class
-//        );
-        marshaller.setPackagesToScan("org.giant.api.domain");
+        marshaller.setClassesToBeBound(
+                LogenNumberRequest.class,
+                LogenNumberResponse.class,
+                LogenZipCodeRequest.class,
+                LogenZipCodeResponse.class,
+                LogenTraceRequest.class,
+                LogenTraceResponse.class,
+                LogenOrderRequest.class,
+                LogenOrderResponse.class,
+                GetAddressInformationByValue.class,
+                GetAddressInformationByValueResponse.class
+       );
+        //marshaller.setPackagesToScan("org.giant.api.domain");
 
         return marshaller;
     }

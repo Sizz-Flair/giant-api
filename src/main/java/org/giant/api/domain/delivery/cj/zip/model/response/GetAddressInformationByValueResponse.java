@@ -8,7 +8,7 @@ package org.giant.api.domain.delivery.cj.zip.model.response;
  * 작성자: akfur
  * 작성일: 2025-09-07
  */
-import javax.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(

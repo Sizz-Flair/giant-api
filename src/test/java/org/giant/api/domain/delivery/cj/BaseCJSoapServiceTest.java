@@ -5,10 +5,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * BaseCJSoapServiceTest 클래스
  *
@@ -24,4 +20,10 @@ class BaseCJSoapServiceTest {
     private CJApiFacade cjApiFacade;
 
 
+    @Test
+    void test() {
+        AddressInfo orer = cjApiFacade.callZipCode("orer", "인천광역시 부평구 안남로 15번길 24").get();
+
+        System.out.println(orer.toString());
+    }
 }

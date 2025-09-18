@@ -2,8 +2,7 @@ package org.giant.api.domain.delivery.cj.zip.model.response;
 
 import lombok.Getter;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.*;
 
 /**
  * AddressInfo 클래스

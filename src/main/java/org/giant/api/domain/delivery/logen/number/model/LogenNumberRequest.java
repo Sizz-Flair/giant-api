@@ -1,9 +1,8 @@
 package org.giant.api.domain.delivery.logen.number.model;
 
+import jakarta.xml.bind.annotation.*;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
-
-import javax.xml.bind.annotation.*;
 
 /**
  * Logen 송장 채번 모델

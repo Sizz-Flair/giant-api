@@ -1,8 +1,6 @@
 package org.giant.api.domain.delivery.cj.zip.model.request;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.*;
 
 /**
  * SoapBody 클래스
